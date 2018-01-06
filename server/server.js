@@ -5,6 +5,9 @@ var boot = require('loopback-boot');
 
 var app = module.exports = loopback();
 
+app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 8080);
+app.set('ip', process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1');
+
 app.start = function() {
   // start the web server
   return app.listen(function() {
