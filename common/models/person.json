@@ -1,0 +1,44 @@
+{
+  "name": "Person",
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "fatherName": {
+      "type": "string",
+      "required": true
+    },
+    "nativeVillage": {
+      "type": "string",
+      "required": true
+    },
+    "contactNo": {
+      "type": "string"
+    },
+    "address":{
+      "type": "string"
+    },
+    "lat":{
+      "type": "number"
+    },
+    "lng":{
+      "type": "number"
+    },
+    "note":{
+      "type": "string"
+    },
+    "verified": {
+      "type": "boolean",
+      "required": false
+    },
+    "groupId": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
